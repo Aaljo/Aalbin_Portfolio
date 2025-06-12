@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aalbin Joseph | Portfolio</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="logo">Aalbin.</div>
+    <ul class="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button onclick="toggleMode()" class="mode-btn" id="modeToggle">Dark Mode</button></li>
+    </ul>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm Aalbin</h1>
+      <p>B.Tech 1st Year Student</p>
+      <p>Creative. Passionate. Tech Enthusiast.</p>
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
+    <div class="hero-img">
+      <img src="images/profile.jpg" alt="Aalbin Joseph" />
+    </div>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I am a first-year B.Tech student who loves technology, football, and music. I enjoy solving problems, designing creative projects, and exploring new ideas in software development.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skill-container">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">Figma</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">C Programming</div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Orrery Web App</h3>
+      <p>Visualizes celestial motion in real-time using WebGL. Built for NASA Space Apps Challenge.</p>
+    </div>
+    
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <form onsubmit="sendMessage(event)">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Your message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Aalbin Joseph. Designed with ♥</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,163 @@
+:root {
+  --main-bg: #ffffff;
+  --text-color: #111;
+  --accent-color: #4f46e5;
+}
+
+body.dark-mode {
+  --main-bg: #111;
+  --text-color: #eee;
+  --accent-color: #8b5cf6;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--main-bg);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--accent-color);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-menu li a,
+.mode-btn {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-menu li a:hover,
+.mode-btn:hover {
+  transform: scale(1.1);
+}
+
+.mode-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #3b37cc;
+}
+
+.hero-img img {
+  width: 250px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+section {
+  padding: 3rem 2rem;
+  max-width: 960px;
+  margin: auto;
+}
+
+.skill-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background: var(--accent-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.project {
+  background: #f4f4f4;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+body.dark-mode .project {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #fff;
+}
+
+form button {
+  padding: 0.8rem 1.2rem;
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--accent-color);
+  color: white;
+}
